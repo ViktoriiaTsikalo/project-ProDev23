@@ -1,0 +1,318 @@
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  gap: 26px;
+  /* flex-direction: column; */
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e7e9fc;
+  flex-direction: row;
+
+  gap: 203px;
+}
+.container header-container {
+  width: 1151px;
+  height: 36px;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* Логотип */
+.logo {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+.header-logo {
+  /* padding: 8px 0; */
+  display: block;
+  width: 112px;
+  height: 24px;
+}
+
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  display: block;
+  fill: #0c0c0c;
+}
+
+@media screen and (min-width: 1280px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-desktop {
+  display: none;
+  align-items: center;
+  gap: 40px;
+  @media (min-width: 768px) {
+    /* 768px: Для планшетів */
+    display: flex;
+  }
+}
+
+.contacts-desktop {
+  /* display: none; */
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+/* .contacts {
+    font-style: normal;
+    margin-left: auto;
+} */
+
+/* .contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+} */
+
+/* Стилі для посилань і навігації */
+.contacts-link,
+.nav-link {
+  display: block;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link.current {
+  position: relative;
+}
+
+.nav-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
+/* .contacts {
+    font-style: normal;
+} */
+
+/* .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+} */
+
+/* .contacts-link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.nav-link.current {
+  color: #404bbf;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+  /* 
+    .contacts-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    } */
+
+  /* .contacts-link {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+} */
+
+  /* .list-item-cont {
+    padding: 32px 0;
+} */
+
+  .shop-social-list {
+    display: flex;
+    gap: 10px;
+    @media (min-width: 768px) {
+      /* 768px: Для планшетів */
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
+  .social-icons {
+    fill: #0c0c0c;
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 10%;
+    padding: 8px;
+
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-icons :hover {
+    fill: #3350e9;
+  }
+
+  .social-icons :focus {
+    fill: #3350e9;
+  }
+
+  .social-networks {
+    /* fill: #F4F4FD; */
+  }
+}
+
+/* mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 24px;
+  right: 17px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-nav {
+  margin-bottom: auto;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* /* .contacts-mobile {
+    margin-left: 0;
+    @media (min-width: 768px) {
+        /* 768px: Для планшетів
+        display: flex;} */
+
+/* .contacts-list-mobile {
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 48px;
+} */
+
+/* .contacts-link-mobile {
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+} */
+
+/* .contacts-link-mobile:focus {
+    color: #4d5ae5;
+} */
+
+.nav-list-mobile {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link-mobile {
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.nav-link-mobile.current::after {
+  background: none;
+}
