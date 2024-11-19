@@ -1,67 +1,50 @@
-.catalog-section {
-    display: flex;
-    padding: 0px 65px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    border: 1px solid #000;
-    background: #fff;
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
 .catalog-title {
-    color: #0c0c0c;
-    text-shadow: 0px 4px 4pxx rgba(0, 0, 0, 0.25);
-    font-family: Gilory;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 660;
-    line-height: 44px;
-    letter-spacing: -0.96px;
+    color: #0C0C0C; 
+    font-size: 48px; 
+    font-family: Gilroy; 
+    font-weight: 600; 
+    line-height: 44px; 
+    word-wrap: break-word"
 }
-.catalog-list {
-    display: flex;
-    width: 1150px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 32px 23px;
-    flex-wrap: wrap;
-    border: 1px solid #000;
-}
+
 .catalog-item {
-    width: 368px;
-    height: 414px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 1px solid rgba (12, 12, 12, 0.05);
-    background: #f3f3f3;
-}
-.catalog-cover-wrapper {
-    display: flex;
-    width: 304px;
-    padding: 6px 6px 14px 6px;
-    flex-direction: column;
-    align-items: center;
-}
-.catalog-text {
-    width: 304px;
-    height: 18px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
-    color: #0c0c0c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.catalog-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.catalog-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.catalog-item .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    color: #333;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-family: Gilory;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: -0.4px;
+    overflow: hidden;
 }
-.catalog-price {
-    color: rgba(12, 12, 12, 0.50);
-    font-family: Gilory;
+.catalog-item .price {
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: -0.28px;
+    margin: 0 10px 10px;
+    color: #777;
 }
