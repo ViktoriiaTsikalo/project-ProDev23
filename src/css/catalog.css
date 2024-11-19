@@ -1,5 +1,5 @@
 .catalog {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
@@ -34,17 +34,157 @@
     height: auto;
     display: block;
 }
-.catalog-item .title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
-    color: #333;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+
+.title {
+    color: #0C0C0C;
+    font-size: 20px;
+    font-family: Gilory;
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
 }
-.catalog-item .price {
+.price {
+    color: rgba(12, 12, 12, 0.50);
     font-size: 14px;
-    margin: 0 10px 10px;
-    color: #777;
+    font-family: Gilory;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word;
+}
+.catalog-btn {
+    display: none;
+}
+@media screen and (min-width: 1158px) {
+    .catalog {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+    }
+    .catalog-title {
+            color: #0C0C0C;
+            font-size: 48px;
+            font-family: Gilroy;
+            font-weight: 600;
+            line-height: 44px;
+            word-wrap: break-word;
+    } 
+    .catalog-item {
+            width: 344px;
+            height: 414px;
+            flex-shrink: 0;
+            border-radius: 30px;
+             border: 1px solid rgba(12, 12, 12, 0.05);
+            background: #F3F3F3;
+    }
+    .catalog-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    
+    .catalog-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    .title {
+        width: 280px;
+        height: 18px;
+        overflow: hidden;
+        color: #0C0C0C;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.4px;
+    }
+    .price {
+        color: rgba(12, 12, 12, 0.50);
+        font-family: Gilroy;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+    }
+    .catalog-btn{
+        display: none;
+    }
+}
+
+@media  screen and (min-width: 768px) {
+    .catalog {
+        display: flex;
+        padding: 0px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .catalog-title {
+        color: #0C0C0C;
+        font-family: Gilroy;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.64px;
+    }
+    .catalog-item {
+        display: flex;
+        width: 279px;
+        height: 262px;
+        padding: 18px 36px 18px 35px;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalog-item:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .catalog-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .title {
+        width: 280px;
+        height: 18px;
+        overflow: hidden;
+        color: #0C0C0C;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.32px;
+    }
+    .price {
+        color: rgba(12, 12, 12, 0.50);
+        font-family: Gilroy;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.28px;
+    }
+    .catalog-btn{
+        border-radius: 16px;
+        background: #3350E9;
+        width: 160px;
+        height: 48px;
+        flex-shrink: 0;
+        color: #FBFBFB;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;  
+    }
 }
