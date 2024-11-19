@@ -108,7 +108,7 @@
 
         .wrist-watch-img {
             max-width: 704px;
-            max-height: 512px;
+            min-height: 512px;
             border-radius: 50px;
         }
 
@@ -135,8 +135,7 @@
     .wrist-watch-img {
         display: block;
         max-width: 530px;
-        max-height: 532px;
+        height: 532px;
         border-radius: 50px;
     }
-
 }
