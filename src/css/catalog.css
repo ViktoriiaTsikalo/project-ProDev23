@@ -1,0 +1,20 @@
+.catalog-section {
+    display: flex;
+    padding: 0px 65px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.catalog-title {
+    color: #0c0c0c;
+    text-shadow: 0px 4px 4pxx rgba(0, 0, 0, 0.25);
+    font-family: Gilory;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 660;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+}
