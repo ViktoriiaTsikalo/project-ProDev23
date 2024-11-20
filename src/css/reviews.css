@@ -1,0 +1,133 @@
+body {
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+      url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Gilroy-Regular.woff2') format('woff2'),
+      url('Gilroy-Regular.woff') format('woff'),
+      url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+      url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+      url('Gilroy-Bold.woff2') format('woff2'),
+      url('Gilroy-Bold.woff') format('woff'),
+      url('Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+      url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('Gilroy-Semibold.woff2') format('woff2'),
+      url('Gilroy-Semibold.woff') format('woff'),
+      url('Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+      url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+      url('Gilroy-Medium.woff2') format('woff2'),
+      url('Gilroy-Medium.woff') format('woff'),
+      url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  /* Секція Reviews */
+  .reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .reviews {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .reviews-title {
+    font: Gilroy;
+    position: absolute;
+    top: -20px; /* Зміщення вверх */
+    left: 0;
+    
+    transform-origin: left top; /* Точка обертання */
+    font-family: 'Gilroy', sans-serif;
+    font-size: 48px; /* Розмір тексту */
+    font-weight: 600; /* Товщина шрифту */
+    line-height: 44px; /* Висота рядка */
+    color: #000; /* Колір тексту */
+    letter-spacing: -2%; /* Відстань між символами */
+  }
+  
+  
+  .reviews ul {
+    display: grid;
+    grid-template-columns: 1fr; /* Для мобільних пристроїв 1 відгук */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .review {
+    background-color: #F3F3F3;
+  
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .review .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .review h3 {
+    font: Gilroy;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    font-size: 0.9rem;
+    color: rgba(12, 12, 12, 0.4); /* Сірий колір тексту */
+    line-height: 1.4;
+  }
+  
+  /* Адаптивність */
+  @media (min-width: 600px) {
+    .reviews ul {
+      grid-template-columns: repeat(2, 1fr); /* Для планшетів 2 відгуки */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .reviews ul {
+      grid-template-columns: repeat(3, 1fr); /* Для десктопів 3 відгуки */
+    }
+  }
+  
