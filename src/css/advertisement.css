@@ -106,7 +106,7 @@
   overflow: hidden;
 }
 .advertisement-text {
-  font-family: var('Gilroyy');
+  font-family: 'Gilroy', sans-serif;
   margin-top: 0;
   margin-bottom: 28px;
   font-weight: 600;
@@ -117,7 +117,6 @@
 }
 @media only screen and (min-width: 768px) {
   .advertisement-text {
-    /*---*/
     font-size: 48px;
     line-height: 92%;
     margin-bottom: 0;
@@ -125,7 +124,6 @@
 }
 @media only screen and (min-width: 1280px) {
   .advertisement-text {
-    /*---*/
     max-width: 1150px;
   }
 }
@@ -133,7 +131,7 @@
   color: #fbfbfb80;
 }
 .advertisement-link {
-  font-family: var(--font-family);
+  font-family: 'Gilroy', sans-serif;
   display: inline-flex;
   padding: 15px 43px 15px 44px;
   border: 1px solid rgba(251, 251, 251, 0.15);
