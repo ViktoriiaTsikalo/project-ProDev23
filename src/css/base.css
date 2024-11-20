@@ -6,3 +6,19 @@
 body {
   margin: 0;
 }
+
+section {
+  margin-bottom: 60px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  section {
+    margin-bottom: 80px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  section {
+    margin-bottom: 100px;
+  }
+}
