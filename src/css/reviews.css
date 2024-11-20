@@ -1,87 +1,94 @@
-body {
-    font-family: 'Gilroy', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+.reviews-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
 
-  /* Секція Reviews */
-  .reviews {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .reviews {
-    position: relative;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
+.single-card {
+  border-radius: 30px;
+  padding: 32px 36px;
+  max-width: 335px;
+  background-color: #f3f3f3;
+}
+
+.card-foto {
+  margin: 0 auto 24px;
+  border-radius: 50%;
+}
+
+.title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
+
+.victoria {
+  display: none;
+}
+
+.anastasia {
+  display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
   .reviews-title {
-    font: Gilroy;
-    position: absolute;
-    top: -20px; 
-    left: 0;
-    
-    transform-origin: left top; 
-    font-family: 'Gilroy', sans-serif;
-    font-size: 48px;
-    font-weight: 600; 
-    line-height: 44px; 
-    color: #000; 
-    letter-spacing: -2%; 
+      font-size: 48px;
+      line-height: 0.91667;
+      margin-bottom: 40px;
   }
-  
-  
-  .reviews ul {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+  .review-cards {
+      display: flex;
+      gap: 16px;
   }
-  
-  .review {
-    background-color: #F3F3F3;
-  
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
+  .single-card {
+      max-width: 344px;
   }
-  
-  .review .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+
+  .title-name {
+      font-size: 18px;
+      line-height: 1.1;
   }
-  
-  .review h3 {
-    font: Gilroy;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 10px;
+
+  .review-text {
+      font-size: 16px;
+      line-height: 1.25;
   }
-  
-  .review p {
-    font-size: 0.9rem;
-    color: rgba(12, 12, 12, 0.4); /* Сірий колір тексту */
-    line-height: 1.4;
+
+  .victoria {
+      display: block;
   }
-  
-  /* Адаптивність */
-  @media (min-width: 600px) {
-    .reviews ul {
-      grid-template-columns: repeat(2, 1fr); /* Для планшетів 2 відгуки */
-    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .review-cards {
+      gap: 20px;
   }
-  
-  @media (min-width: 900px) {
-    .reviews ul {
-      grid-template-columns: repeat(3, 1fr); /* Для десктопів 3 відгуки */
-    }
+
+  .single-card {
+      max-width: 370px;
   }
-  
+
+  .anastasia {
+      display: block;
+  }
+}
