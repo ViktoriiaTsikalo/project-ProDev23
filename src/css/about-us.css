@@ -1,141 +1,135 @@
-
-
 .main-about-us {
-      align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-
 .block-about-us {
-    max-width: 335px;
-    align-items: flex-start;
-    background: #f3f3f3;
-    border-radius: 30px;
+  max-width: 335px;
+  align-items: flex-start;
+  background: #f3f3f3;
+  border-radius: 30px;
 }
 
 .about-us-info {
-    padding: 40px 20px;
+  padding: 40px 20px;
 }
 
 .about-us-title {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    padding-bottom: 28px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  padding-bottom: 28px;
 }
 
 .about-us-text {
-    min-width: 295px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.7);
-    padding-bottom: 40px;
+  min-width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  padding-bottom: 40px;
 }
 
 .catalog-btn {
-    border-radius: 16px;
-    width: 160px;
-    height: 48px;
-    background: #3350e9;
-    border: none;
-    cursor: pointer;
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28571;
-    text-align: center;
-    color: #fbfbfb;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  background: #3350e9;
+  border: none;
+  cursor: pointer;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalog-btn:hover,
 .catalog-btn:focus {
-    background-color: #1f3cd4;
+  background-color: #1f3cd4;
 }
-
 
 .wrist-watch-img {
-    border-radius: 30px;
-    display: block;
-    max-width: 335px;
-    min-height: 446px;
-    background: rgba(12, 12, 12, 0.2);
+  border-radius: 30px;
+  display: block;
+  max-width: 335px;
+  min-height: 446px;
+  background: rgba(12, 12, 12, 0.2);
 }
-
-
 
 /* Styles for Tablet devices */
 
 @media only screen and (min-width: 768px) {
-    .main-about-us {
-        gap: 40px;
-    }
+  .main-about-us {
+    gap: 40px;
+  }
 
-    .block-about-us {
-        max-width: 704px;
-        border-radius: 50px;
-    }
+  .block-about-us {
+    max-width: 704px;
+    border-radius: 50px;
+  }
 
-    .about-us-info {
-        padding: 80px 60px;
-    }
+  .about-us-info {
+    padding: 80px 60px;
+  }
 
+  .about-us-title {
+    font-size: 48px;
+    line-height: 0.91667;
+    color: #0c0c0c;
+    padding-bottom: 40px;
+    gap: 40px;
+  }
 
-    .about-us-title {
-        font-size: 48px;
-        line-height: 0.91667;
-        color: #0c0c0c;
-        padding-bottom: 40px;
-        gap: 40px;
+  .about-us-text {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-bottom: 60px;
+  }
 
-    }
-
-    .about-us-text {
-        font-size: 16px;
-        line-height: 1.25;
-        padding-bottom: 60px;
-    }
-
-        .wrist-watch-img {
-            max-width: 704px;
-            min-height: 512px;
-            border-radius: 50px;
-        }
-
+  .wrist-watch-img {
+    max-width: 704px;
+    min-height: 512px;
+    border-radius: 50px;
+  }
 }
 
 /* Styles for Desktop devices */
 
 @media only screen and (min-width: 1280px) {
-    .main-about-us {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
+  .main-about-us {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 
-    .block-about-us {
-        max-width: 580px;
-    }
+  .block-about-us {
+    max-width: 580px;
+  }
 
-    .about-us-text {
-        min-width: 460px;
-        padding-bottom: 40px;
-    }
+  .about-us-text {
+    min-width: 460px;
+    padding-bottom: 40px;
+  }
 
-    .wrist-watch-img {
-        display: block;
-        max-width: 530px;
-        height: 532px;
-        border-radius: 50px;
-    }
+  .wrist-watch-img {
+    display: block;
+    max-width: 530px;
+    height: 532px;
+    border-radius: 50px;
+  }
 }
