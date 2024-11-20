@@ -1,0 +1,111 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.adv-block {
+    border-radius: 30px;
+    max-width: 335px;
+    max-height: 363px;
+    background-image: url(../img/fun-bonus/adv-mob-min.jpg);
+    padding: 60px 28px;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .adv-block {
+        background-image: url(../img/fun-bonus/adv-mob-2x-min.jpg);
+    }
+}
+
+.adv-text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    margin-bottom: 28px;
+}
+
+.grey-text {
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.adv-button {
+    border: 1px solid rgba(251, 251, 251, 0.15);
+    border-radius: 16px;
+    min-width: 160px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #fbfbfb;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 15px 43px 15px 44px;
+    transition-property: background-color, color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adv-button:hover {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #0c0c0c;
+    background-color: #fbfbfb;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .adv-block {
+        background-image: url(../img/fun-bonus/adv-tab-min.jpg);
+        padding: 80px 64px;
+        max-width: 704px;
+        max-height: 425px;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .adv-block {
+            background-image: url(../img/fun-bonus/adv-tab-2x-min.jpg);
+        }
+    }
+
+    .adv-text {
+        font-size: 48px;
+        line-height: 0.91667;
+        margin-bottom: 32px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .adv-block {
+        max-width: 1150px;
+        max-height: 298px;
+        background-image: url(../img/fun-bonus/adv-desc-min.jpg);
+        padding: 80px;
+        display: flex;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .adv-block {
+            background-image: url(../img/fun-bonus/adv-desc-2x-min.jpg);
+        }
+    }
+
+    .adv-button {
+        flex-shrink: 0;
+        margin-left: 140px;
+    }
+}
