@@ -7,10 +7,6 @@
   margin-bottom: 24px;
 }
 
-.sale-adaption {
-  margin-bottom: 20px;
-}
-
 .clock-galerey {
   display: flex;
   margin-bottom: 20px;
@@ -137,7 +133,6 @@
     flex-wrap: wrap;
     row-gap: 40px;
     column-gap: 20px;
-    margin-bottom: 80px;
   }
 
   .clock-galerey {
@@ -200,7 +195,6 @@
     flex-wrap: no-wrap;
     flex-direction: row;
     gap: 0px;
-    margin-bottom: 100px;
   }
 
   .sale-clock {

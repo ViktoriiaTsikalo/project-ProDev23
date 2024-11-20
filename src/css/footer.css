@@ -1,9 +1,15 @@
 .footer {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 92px;
   border-radius: 30px;
   padding: 40px 28px 28px 28px;
   margin-top: 60px;
@@ -15,7 +21,6 @@
   display: flex;
   flex-direction: column;
   min-width: 279px;
-  min-height: 513px;
 }
 
 .logo {
@@ -177,6 +182,12 @@
 /* ------------------------Tablet------------------------------- */
 @media screen and (min-width: 768px) {
   .footer {
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+  }
+
+  .footer-container {
     padding: 40px 40px 28px 40px;
     margin-top: 80px;
     min-height: 540px;
@@ -264,6 +275,12 @@
 /* ------------------------Screen------------------------------- */
 @media screen and (min-width: 1280px) {
   .footer {
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+  }
+
+  .footer-container {
     margin-top: 100px;
     min-height: 400px;
   }
@@ -292,7 +309,7 @@
     margin: 0;
   }
 
-  .tel {
+  .footer-tel {
     order: 3;
   }
 
