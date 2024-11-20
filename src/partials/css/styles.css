@@ -20,22 +20,22 @@ body {
   .reviews-title {
     font: Gilroy;
     position: absolute;
-    top: -20px; 
+    top: -20px; /* Зміщення вверх */
     left: 0;
     
-    transform-origin: left top; 
+    transform-origin: left top; /* Точка обертання */
     font-family: 'Gilroy', sans-serif;
-    font-size: 48px;
-    font-weight: 600; 
-    line-height: 44px; 
-    color: #000; 
-    letter-spacing: -2%; 
+    font-size: 48px; /* Розмір тексту */
+    font-weight: 600; /* Товщина шрифту */
+    line-height: 44px; /* Висота рядка */
+    color: #000; /* Колір тексту */
+    letter-spacing: -2%; /* Відстань між символами */
   }
   
   
   .reviews ul {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* Для мобільних пристроїв 1 відгук */
     gap: 20px;
     list-style: none;
     padding: 0;
